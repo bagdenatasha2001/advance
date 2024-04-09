@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> basic html and css task form 1 </title>
+        <style>
+            * {
+              margin: 10 ;         
+              padding: 20;
+            }
+            #container {
+              background-image: linear-gradient(
+                rgb(159, 41, 250),
+                rgb(253, 128, 232)
+              );
+              height: 110vh;
+              width: 200;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+      
+            .form-container {
+              background-color: rgba(255, 255, 255, 0.911);
+              border-radius: 5px;
+              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.148);
+              width: 30%;
+            }
+            .heading {
+              text-align: center;
+              background-color: rgb(227, 227, 237);
+              padding: 4%;
+            }
+            .heading .text1 {
+              font-size: 1em;
+            }
+            .heading .text2 {
+              font-size: 2em;
+            }
+            
+            
+            #name {
+              width: 23%;
+            }
+            .information {
+              padding: 6%;
+              width: 90%;
+             
+              
+            }
+            input {
+              width: 96%;
+              height: 40px;
+              background-color: rgb(227, 227, 237);
+              border: none;
+            }
+            input[type="submit"] {
+              height: 27px;
+              border: none;
+              background-color: rgb(14, 138, 154);
+              color: #ffffff;
+              border-radius: 4px;
+            }
+            label {
+              padding-bottom: 5px;
+            }
+            textarea {
+              width: 96%;
+              background-color: rgb(227, 228, 237);
+              border: none;
+            }
+          </style>
+    </head>
+   
+ <body>
+    <div id="container">
+        <div class="form-container">
+<form action="">
+    <div class="heading">
+      <span class="text1">CONTACT FORM </span><br><br>
+      <span class="text2">Get In Touch</span>
+    </div>
+    <div class="information">
+      <label for="Name">Name</label> <br>
+      <input
+        type="text"
+        id="name"
+        required
+        style="width: 96%"> <br><br>
+      <label for="Email"> Email</label> <br />
+      <input type="email" id="email" required /> <br><br>
+      <label for="Message ">Message</label> <br>
+      <textarea rows="9" cols="39" id="message" required> </textarea >
+         <br> <br>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
+</div>
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
