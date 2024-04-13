@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>advance task of html and css form2 </title>
+</head>
+<style>
+    body{
+        background-color: rgb(127, 255, 251);
+         margin-left: 85px;
+    }
+    h1{
+    
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+        
+    }
+    .container{
+
+        background-color: white;
+        width: 700px;
+        height: 820px;
+        text-transform: capitalize;
+        text-align: center;
+         padding-left: 15px;
+          position: absolute;
+        margin-top: 2%;
+        margin-left:28%;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        margin-bottom: 7px;
+       justify-content: center;
+    }
+form{
+       padding: 15px;
+       padding-left: 10px;
+    }
+    input{
+        width:50%;
+        color: rgb(158, 155, 150);
+        height: 20px;
+        text-transform: capitalize;
+    }
+    button{
+    background-color: #6ba3cf;
+    font-size: 15pt;
+    color: #f3f2f2;
+    height:36px;
+    width: 120px;
+   margin-bottom: 7px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.button{
+    padding-left: 4%;
+}
+h2{
+    font-size: larger
+}
+.myul{
+    display: inline-block;
+    text-align: center;
+    font-size: larger;
+}
+
+.emotions{
+    
+    text-align: center;
+    margin-left: 3px;
+    font-size: larger;
+}
+.emotions p{
+    margin-left: 1px;
+}
+ select{
+    text-transform: capitalize;
+    color: rgb(158, 155, 150);;
+}
+
+
+
+</style>
+<body>
+    <h1> good vibes form</h1>
+    <div class="container"> 
+        <h2>tell us somthing positive that happend to you today.</h2>
+        
+        <form> 
+            
+
+            Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fname " name="fname" value="enter your name"><br><br> <br>
+            Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email " name="email" value="enter your email address"><br><br><br> 
+           on a scale of 1-10,how good was it? &nbsp;&nbsp;<input type="text" id="scale" name="scale" value="enter a number between 1 and 10"> <br><br><br>  
+              whare did it happen?     
+                <select><option value="1"> at home</option>
+                <option value="2"> at market </option>
+                <option value="3"> at school</option>
+                <option value="4">at college</option>
+                <option value="5"> at park </option>
+               
+             </select><br><br>
+             At what time of the day did it happen?<ul class="myul" style="list-style-type: circle">   
+                
+                <li>Morning </li>
+                <li>Afternoon</li>
+                <li> Evening</li>
+                </ul><br>
+                <div class="emotions" style="list-style-type: square" >
+                    <p>What emotions did you experience?</p>
+
+                    <input type="checkbox" name="c1">Excited<br>
+                    <input type="checkbox" name="c2">Humble<br>
+                    <input type="checkbox" name="c3">Elated<br>
+                    <input type="checkbox" name="c4">Loved<br>
+                    <input type="checkbox" name="c5">Enthusiastic<br>
+                    </div>
+                      <br>
+                    Please Describe your Positive experience<br><br>
+                    
+                    <textarea name="experience" cols="40" rows="5" placeholder="Enter your experience here"></textarea><br><br>
+                    <div class="button">            
+                        <button type="submit" name="submit">Submit</button>
+                    </div>
+            </form>
+
+    </div>
+    
+</body>
+</html>

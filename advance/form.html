@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>  advance task of html and css form   </title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container {
+    background-color: #1f1e1e;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.form-container {
+    background-color: #8cb3ee;
+    width: 65%;
+    padding-bottom: 2px;
+
+}
+
+.heading {
+    text-align: center;
+    background-color:#86b7fe;
+    padding: 3%;
+
+}
+
+.inner-heading {
+    font-size: 25pt;
+    font-weight: 900;
+    padding: 10px 0px 5px 0px;
+    color: white;
+}
+
+h2{
+    font-size: 20pt;
+    color: white;
+    padding: 5px;
+}
+
+.address h2{
+    font-size: 20pt;
+    color: white;
+    padding: 80px 80px 0px 0px;
+}
+.address label{
+    padding: 0px 700px 0px 5px;
+    color: white;
+}
+.error {
+    color: #ff00;
+    font-weight: bold;
+}
+
+#zip{
+    width: 37%;
+}
+
+.infomation {
+    padding: 3%;
+}
+.name-container {
+    width: 100%;
+}
+
+.basic-information{
+    float: left;
+    width: 40%;
+}
+
+.basic-information label {
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+input[type="text"]{
+    width: 92%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 3px;
+}
+select{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 140%;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(80, 34, 34, 0.34);
+    text-transform: capitalize;
+
+}
+.gender h2{
+    padding: 90px 0px 20px 0px;
+}
+.gender label{
+    color: white;
+    padding: 5px;
+}
+.Radip-grp {
+    display:flex ;
+    align-items: center;
+}
+.Ratings h2{
+    padding-top: 20px;
+}
+.Ratings h5{
+   color: white;
+   font-weight: 900;
+
+}
+.Ratings label{
+    color: white;
+    padding: 20px;
+}
+button {
+    font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+    background-color: #023de3;
+     border-radius: 10px;
+    box-shadow: 1px #0000;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-container">
+            <form action="">
+                <div class="heading">
+                    <h1 class="inner-heading">Survey Form:</h1>
+                    <hr>
+                </div>
+                <div class="infomation">
+                    <h2>Customer Name</h2>
+                    <div class="basic-information">
+                        <input type="text" id="first-name" name="first-name" required><br>
+                        <label for="first-name">Enter your First Name </label>
+                    </div>
+                    <div class="basic-information">
+                        <input type="text" id="last-name" name="last-name" required><br>
+                        <label for="last-name">Enter your last Name</label>
+                    </div><br>
+                    <div class="address">
+                        <h2>Address</h2><br>
+                        <input type="text" id="street-address" name="street-address" required><br>
+                        <label for="street-address" id="street-address-2">Street Address</label><br><br>
+                        <input type="text" id="street-address" name="street-address" required><br>
+                        <label for="street-address" id="street-address-2">Street Address 2</label><br><br>
+                        <div class="basic-information">
+                            <input type="text" id="city-name" name="city" required><br>
+                            <label for="city">city</label>
+                        </div>
+                        <div class="basic-information">
+                            <input type="text" id="state" name="state" required><br>
+                            <label for="state">state</label>
+                        </div>
+                        <div>
+                        <input type="text" id="zip" name="zip" required><br>
+                        <label for="Zip">Zip</label><br><br><br>
+                    </div>
+                    </div>
+                    <div class="basic-information">
+                        <select name="country" required>
+                            <option value="algeria"> algeria </option>
+                            <option value="australia">australia </option>
+                            <option value="armrnia">armrnia</option>
+                            <option value="india"> india</option>
+                            <option value="iran">iran </option>
+                            <option value="italy">italy </option>
+                            <option value="japan">japan </option>
+                            <option value="russia">russia </option>
+                            <option value="hungary">hungary </option>
+                            <option value="belzium">belzium</option>
+                            <option value="bhutan">bhutan </option>
+                            <option value="brazil">brazil</option>
+                            <option value="iran">iran </option>
+                            <option value="south africa"> south africa</option>
+                            <option value="south korea"> south korea</option>
+                        </select><br>
+                        <label id="select-country">Select Country</label>
+                    </div><br><br><br><br>
+                    <h2>Contact</h2>
+                    <div class="basic-information">
+                        <input type="text" id="first-name" name="first-name" required><br>
+                        <label for="first-name">Phone</label>
+                    </div>
+                    <div class="basic-information">
+                        <input type="text" id="last-name" name="last-name" required><br>
+                        <label for="last-name">Email</label>
+
+                    </div>
+                    <div class="gender">
+                        <h2>Personal Details</h2>
+                        <input type="radio" name="gender" value="male">
+                        <label>Male</label><br>
+                        <input type="radio" name="gender" value="female">
+                        <label>Female</label><br>
+                        <input type="radio" name="gender" value="other">
+                        <label>Other</label><br>
+                    </div>
+                    <div class="Ratings">
+                        <h2>Ratings</h2>
+                        <div class="Radip-grp">
+                        <h5>Rating 1:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad" name="rating1" value="bad">
+                            <label for="bad">Bad</label>
+                            <input type="radio" id="good" name="ratingi" value="good">
+                            <label for="good">Good</label>
+                            <input type="radio" id="excelent" name="rating1" value="other">
+                            <label for="excelent">Excelent</label>
+                        </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 2:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad2" name="rating2" value="bad">
+                            <label for="bad2">Bad</label>
+                            <input type="radio" id="good2" name="rating2" value="good">
+                            <label for="good2">Good</label>
+                            <input type="radio" id="excelent2" name="rating2" value="excelent">
+                            <label for="excelent2">Excelent</label>
+                            </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 3 :</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad3" name="rating" value="bad">
+                            <label for="bad3">Bad</label>
+                            <input type="radio" id="good3" name="rating3" value="good">
+                            <label for="good3">Good</label>
+                            <input type="radio" id="excelent3" name="rating3" value="excelent">
+                            <label for="excelent3">Excelent</label>
+                            </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 4:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad4" name="rating4" value="bad">
+                            <label for="bad">Bad</label>
+                            <input type="radio" id="good4" name="rating4" value="good">
+                            <label for="good4">Good</label>
+                            <input type="radio" id="excelent4" name="rating4" value="excelent">
+                            <label for="excelent4">Excelent</label>
+                            </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 5:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad5" name="ratings" value="bad">
+                            <label for="bad">Bad</label>
+                            <input type="radio" id="good5" name="rating5" value="good">
+                            <label for="good5">Good</label>
+                            <input type="radio" id="excelents" name="rating5" value="excelent">
+                            <label for="excelent5">Excelent</label>
+                            </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 6:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad6" name="rating6" value="bad">
+                            <label for="bad6">Bad</label>
+                            <input type="radio" id="good6" name="rating" value="good">
+                            <label for="good">Good</label>
+                            <input type="radio" id="excelent6" name="rating5" value="excelent">
+                            <label for="excelent6">Excelent</label>
+                            </div>
+                        <div class="Radip-grp">
+                        <h5>Rating 7:</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="bad7" name="rating7" value="bad">
+                            <label for="bad7">Bad</label>
+                            <input type="radio" id="good7" name="rating7" value="good">
+                            <label for="good7">Good</label>
+                            <input type="radio" id="excelent7" name="rating7" value="excelent">
+                            <label for="excelent7">Excelent</label>
+                        </div>
+                        </div>
+                    <button type="submit"> Submit </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
